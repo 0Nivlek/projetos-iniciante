@@ -1,23 +1,23 @@
 @charset "UTF-8";
 
-main{
+body{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
-    min-width: 100vw;
-    min-height: 100vh;
+    width: 100vw;
+    
+    margin: 0px;
 }
-
+/*MENU CSS PART*/
 #menu{
     background-image: linear-gradient(to right, rgb(24, 24, 24), rgb(19, 19, 19));
     color: white;
     
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100vw;
-    
-    min-height: 20vh;
-    max-height: 150px;
+    width: 100%;
+    height: 20%;
 }
 .title{
     display: flex;
@@ -31,6 +31,7 @@ main{
     display: flex;
     height: 100%;
     text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.800);
     color: white;
 }
 .title > a > div{
@@ -48,19 +49,83 @@ main{
 .option{
     display: flex;
 
+    
     width: 100%;
     height: 30%;
 }
 .option > a{
+    width: 5rem;
+    height: fit-content;
     font-size: 1.2rem;
+
+    text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.800);
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
     padding: 1rem;
 }
 .option > a:hover{
-    background-color:  rgb(18, 18, 18);
+    background-color:  rgba(60, 60, 60, 0.250);
+    
+}
+/*MENU CSS PART*/
+/*BODY CSS PART*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 #body{
-    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 100%;
+    
 }
+#body > section{   
+    display: flex;
+    height: 50%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#article-main{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+#article-main > h1, time{
+    margin: 0.5em 0em;
+    padding: 0em 0.5em;
+    font-size: 1vw;
+    font-size: 2vmin;
+}
+#article-main > img{
+    width: 100%;
+    
+}
+/*BODY CSS PART*/
+/*FOOTER CSS PART*/
+    #footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to right, rgb(24, 24, 24), rgb(19, 19, 19));
+
+        width: 100vw;
+        height: 5vh;
+    }
+    #footer > a{
+        font-size: 1.5em;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+    }
+    #footer > a:hover{
+        color: yellow;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    }
+/*FOOTER CSS PART*/
